@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Signup</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9d4d9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      width: 90%;
+      max-width: 400px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      bottom: 30px;
+      height: 650px;
+    }
+
+    .offer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .offer img {
+      width: 100%;
+      padding: 0;
+    }
+
+   
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .checkbox-group {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    .checkbox-group input {
+      margin-right: 5px;
+    }
+
+    .checkbox-group a {
+      color: #d6006d;
+      text-decoration: none;
+    }
+
+    .continue-btn {
+      width: 100%;
+      background: #333;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .help-text {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .help-text a {
+      color: #d6006d;
+      text-decoration: none;
+    }
+
+    @media (max-width: 400px) {
+      .offer-text h2 {
+        font-size: 16px;
+      }
+      .offer img {
+        width: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    
+  <div class="container">
+    <div class="offer">
+      
+      <img src="header/lognin.jpg" alt="Discount Image" />
+      <!-- Replace the image URL with your own if needed -->
+    </div>
+
+    <h3>Login or Signup</h3>
+    <div class="form-group">
+      <label for="mobile">Mobile Number</label>
+      <input type="text" id="mobile" placeholder="+91 Mobile Number" />
+    </div>
+
+    <div class="checkbox-group">
+      <input type="checkbox" id="terms" />
+      <label for="terms">
+        By continuing, I agree to the 
+        <a href="#">Terms of Use</a> & 
+        <a href="#">Privacy Policy</a> and I am above 18 years old.
+      </label>
+    </div>
+
+    <button class="continue-btn">CONTINUE</button>
+
+    <div class="help-text">
+      Have trouble logging in? <a href="#">Get help</a>
+    </div>
+  </div>
+
+</body>
+</html>
